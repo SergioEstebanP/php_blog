@@ -1,3 +1,12 @@
+<?php
+
+// get content for the categories
+if (isset($_GET["pages"])) {
+    $articles = Blog_Controller::get_articles(0, 5, "category_route", $_GET["pages"]);
+    print_r($articles);
+}
+
+?>
 <div class="container-fluid bg-white contenidoInicio py-2 py-md-4">
     <div class="container">
         <!-- BREADCRUMB -->

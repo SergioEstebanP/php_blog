@@ -13,10 +13,10 @@ class Blog_Controller {
         return $response;
     }
 
-    public static function get_articles($from, $amount) {
+    public static function get_articles($from, $amount, $item, $value) {
         $table_articles = "article";
         $table_categories = "category";
-        $response = Blog_Model::get_articles($table_articles, $table_categories, $amount, $from);
+        $response = Blog_Model::get_articles($table_articles, $table_categories, $amount, $from, $item, $value);
         return $response;
     }
 

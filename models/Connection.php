@@ -6,7 +6,6 @@ class Connection {
         $db_connect->exec("set names utf8");
         return $db_connect;
     }
-
 }
 
 ?>

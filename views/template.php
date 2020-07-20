@@ -1,7 +1,7 @@
 <?php 
 $blog = Blog_Controller::show_blog();
 $categories = Blog_Controller::get_categories();
-$articles = Blog_Controller::get_articles(0, 5);
+$articles = Blog_Controller::get_articles(0, 5, null, null);
 
 $total_articles = count(Blog_Controller::get_all_articles());
 $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
@@ -84,7 +84,7 @@ $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
         if (isset($_GET["pages"])) {
             if (is_numeric($_GET["pages"]) && $_GET["pages"] <= $total_pages) {
                 $from = ($_GET["pages"] - 1) * 5;
-                $articles = Blog_Controller::get_articles($from, 5);
+                $articles = Blog_Controller::get_articles($from, 5, null, null);
                 include "pages/init.php";
                 include "pages/modules/footer.php";
             } else {
