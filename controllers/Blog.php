@@ -20,9 +20,9 @@ class Blog_Controller {
         return $response;
     }
 
-    public static function get_all_articles() {
+    public static function get_all_articles($item, $value) {
         $table = "article";
-        $response = Blog_Model::get_all_articles($table);
+        $response = Blog_Model::get_all_articles($table, $item, $value);
         return $response;
     }
 }

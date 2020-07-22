@@ -3,8 +3,8 @@ $blog = Blog_Controller::show_blog();
 $categories = Blog_Controller::get_categories();
 $articles = Blog_Controller::get_articles(0, 5, null, null);
 
-$total_articles = count(Blog_Controller::get_all_articles());
-$total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
+$total_articles = count(Blog_Controller::get_all_articles(null, null));
+$total_pages = ceil(count(Blog_Controller::get_all_articles(null, null))/5);
 
 ?>
 
@@ -36,7 +36,7 @@ $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
         }
 
         ?>
-        <link rel="icon" href="views/img/icono.jpg">
+        <link rel="icon" href="<?php echo $blog["domain"]?>views/img/icono.jpg">
 
         <!--=====================================
             PLUGINS DE CSS
@@ -47,8 +47,8 @@ $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
         <!-- JdSlider -->
         <!-- https://www.jqueryscript.net/slider/Carousel-Slideshow-jdSlider.html -->
-        <link rel="stylesheet" href="views/css/plugins/jquery.jdSlider.css">
-        <link rel="stylesheet" href="views/css/style.css">
+        <link rel="stylesheet" href="<?php echo $blog["domain"]?>views/css/plugins/jquery.jdSlider.css">
+        <link rel="stylesheet" href="<?php echo $blog["domain"]?>views/css/style.css">
 
         <!--=====================================
             PLUGINS DE JS
@@ -61,15 +61,15 @@ $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <!-- JdSlider -->
         <!-- https://www.jqueryscript.net/slider/Carousel-Slideshow-jdSlider.html -->
-        <script src="views/js/plugins/jquery.jdSlider-latest.js"></script>
+        <script src="<?php echo $blog["domain"]?>views/js/plugins/jquery.jdSlider-latest.js"></script>
         <!-- pagination -->
         <!-- http://josecebe.github.io/twbs-pagination/ -->
-        <script src="views/js/plugins/pagination.min.js"></script>
+        <script src="<?php echo $blog["domain"]?>views/js/plugins/pagination.min.js"></script>
         <!-- scrollup -->
         <!-- https://markgoodyear.com/labs/scrollup/ -->
         <!-- https://easings.net/es# -->
-        <script src="views/js/plugins/scrollUP.js"></script>
-        <script src="views/js/plugins/jquery.easing.js"></script>
+        <script src="<?php echo $blog["domain"]?>views/js/plugins/scrollUP.js"></script>
+        <script src="<?php echo $blog["domain"]?>views/js/plugins/jquery.easing.js"></script>
     </head>
 
     <body>
@@ -82,15 +82,16 @@ $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
         include "pages/modules/menu.php";
         $validation = "";
         if (isset($_GET["pages"])) {
-            if (is_numeric($_GET["pages"]) && $_GET["pages"] <= $total_pages) {
-                $from = ($_GET["pages"] - 1) * 5;
+            $routes = explode("/", $_GET["pages"]);
+            if (is_numeric($routes[0]) && $routes[0] <= $total_pages) {
+                $from = ($routes[0] - 1) * 5;
                 $articles = Blog_Controller::get_articles($from, 5, null, null);
                 include "pages/init.php";
                 include "pages/modules/footer.php";
             } else {
                 foreach ($categories as $key => $value) {
-                    if ($_GET["pages"] == $value["route"]) {
-                        $validation = $_GET["pages"];
+                    if ($routes[0] == $value["route"]) {
+                        $validation = $routes[0];
                     }
                 }
                 
@@ -108,7 +109,7 @@ $total_pages = ceil(count(Blog_Controller::get_all_articles())/5);
         ?>
 
         <input type="hidden" id="actual_route" value="<?php echo $blog["domain"]?>">
-        <script src="views/js/script.js"></script>
+        <script src="<?php echo $blog["domain"]?>views/js/script.js"></script>
     </body>
 
 </html

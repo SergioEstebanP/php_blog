@@ -5,7 +5,7 @@
         foreach ($categories as $key => $value) {
             echo '
             <li class="nav-item">
-                <a class="nav-link text-white" href="'.$value["route"].'">'.$value["description"].'</a>
+                <a class="nav-link text-white" href="'.$blog["domain"].''.$value["route"].'">'.$value["description"].'</a>
             </li>';
         }
         ?>

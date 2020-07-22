@@ -4,16 +4,16 @@
 	<div class="slide-inner">
 		<ul class="slide-area">
 			<li>
-				<img src="views/img/banner01.jpg" class="img-fluid">
+				<img src="<?php echo $blog["domain"]?>views/img/banner01.jpg" class="img-fluid">
 			</li>
 			<li>
-				<img src="views/img/banner02.jpg" class="img-fluid">
+				<img src="<?php echo $blog["domain"]?>views/img/banner02.jpg" class="img-fluid">
 			</li>
 			<li>
-				<img src="views/img/banner03.jpg" class="img-fluid">
+				<img src="<?php echo $blog["domain"]?>views/img/banner03.jpg" class="img-fluid">
 			</li>
 			<li>
-				<img src="views/img/banner04.jpg" class="img-fluid">
+				<img src="<?php echo $blog["domain"]?>views/img/banner04.jpg" class="img-fluid">
 			</li>
 		</ul>
 	</div>

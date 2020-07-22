@@ -98,19 +98,23 @@ PAGINACIÓN
 var total_pages = Number($(".pagination").attr("total_pages"))
 var actual_page = Number($(".pagination").attr("actual_page"))
 var actual_route = $("#actual_route").val()
+var route_page = $(".pagination").attr("route_page")
 
 $(".pagination").twbsPagination({
-	totalPages: total_pages,
-	visiblePages: 4,
-	startPage: actual_page,
-	first: "Primero",
-	last: "Último",
-	prev: '<i class="fas fa-angle-left"></i>',
-	next: '<i class="fas fa-angle-right"></i>'
-
+    totalPages: total_pages,
+    visiblePages: 4,
+    startPage: actual_page,
+    first: "Primero",
+    last: "Último",
+    prev: '<i class="fas fa-angle-left"></i>',
+    next: '<i class="fas fa-angle-right"></i>'
 }).on("page", function(evt, page){
-    console.log(actual_route + page)
-    window.location = actual_route + page
+    console.log(route_page)
+    if (route_page != "") {
+        window.location = actual_route + route_page + "/" + page
+    } else {
+        window.location = actual_route + page
+    }
 })
 
 

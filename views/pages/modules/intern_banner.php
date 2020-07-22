@@ -8,7 +8,7 @@
 					<h1>Watch how we work</h1>
 					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ea quidem</h5>
 				</div>
-				<img src="views/img/bannerGrande01.jpg" class="img-fluid">
+				<img src="<?php echo $blog["domain"]?>views/img/bannerGrande01.jpg" class="img-fluid">
 			</li>		
 		</ul>
 	</div>

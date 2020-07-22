@@ -20,10 +20,10 @@
                         <div class="fechaArticulo">30.09.2018</div>
                         <h3 class="tituloArticulo text-right text-muted pl-3 pt-lg-2">Type something here lorem</h3>
                     </div>
-                    <img src="views/img/articulo.png" alt="Lorem ipsum dolor sit amet" class="img-fluid my-lg-3">
+                    <img src="<?php echo $blog["domain"]?>views/img/articulo.png" alt="Lorem ipsum dolor sit amet" class="img-fluid my-lg-3">
                     <p class="textoArticulo my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aliquid laboriosam suscipit magnam distinctio nisi eaque expedita beatae neque nobis dolores corporis laudantium quo voluptatum facilis, aliquam sed deleniti delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae asperiores laborum facere est eos in optio suscipit, consequatur animi placeat adipisci, sunt. Unde distinctio odit, facilis quos eveniet et culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus distinctio assumenda porro fugit voluptates officiis atque? Voluptas, soluta eius inventore aspernatur quasi, earum iste maiores porro ipsam, expedita minus.</p>
                     <!-- PUBLICIDAD -->
-                    <img src="views/img/ad04.png" class="img-fluid my-3" width="100%">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad04.png" class="img-fluid my-3" width="100%">
                     <p class="textoArticulo my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aliquid laboriosam suscipit magnam distinctio nisi eaque expedita beatae neque nobis dolores corporis laudantium quo voluptatum facilis, aliquam sed deleniti delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae asperiores laborum facere est eos in optio suscipit, consequatur animi placeat adipisci, sunt. Unde distinctio odit, facilis quos eveniet et culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus distinctio assumenda porro fugit voluptates officiis atque? Voluptas, soluta eius inventore aspernatur quasi, earum iste maiores porro ipsam, expedita minus.</p>
                     <p class="textoArticulo my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aliquid laboriosam suscipit magnam distinctio nisi eaque expedita beatae neque nobis dolores corporis laudantium quo voluptatum facilis, aliquam sed deleniti delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae asperiores laborum facere est eos in optio suscipit, consequatur animi placeat adipisci, sunt. Unde distinctio odit, facilis quos eveniet et culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus distinctio assumenda porro fugit voluptates officiis atque? Voluptas, soluta eius inventore aspernatur quasi, earum iste maiores porro ipsam, expedita minus.</p>
                     <!-- COMPARTIR EN REDES -->
@@ -71,28 +71,28 @@
                             <ul class="slide-area">
                                 <li class="px-3">
                                     <a href="articulos.html" class="text-secondary">
-                                        <img src="views/img/articulo01.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                                        <img src="<?php echo $blog["domain"]?>views/img/articulo01.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                                         <h6 class="py-2">Type something here</h6>
                                     </a>
                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam sint porro...</p>
                                 </li>
                                 <li class="px-3">
                                     <a href="articulos.html" class="text-secondary">
-                                        <img src="views/img/articulo02.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                                        <img src="<?php echo $blog["domain"]?>views/img/articulo02.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                                         <h6 class="py-2">Type something here</h6>
                                     </a>
                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam sint porro...</p>
                                 </li>
                                 <li class="px-3">
                                     <a href="articulos.html" class="text-secondary">
-                                        <img src="views/img/articulo03.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                                        <img src="<?php echo $blog["domain"]?>views/img/articulo03.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                                         <h6 class="py-2">Type something here</h6>
                                     </a>
                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam sint porro...</p>
                                 </li>
                                 <li class="px-3">
                                     <a href="articulos.html" class="text-secondary">
-                                        <img src="views/img/articulo04.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                                        <img src="<?php echo $blog["domain"]?>views/img/articulo04.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                                         <h6 class="py-2">Type something here</h6>
                                     </a>
                                     <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam sint porro...</p>
@@ -114,7 +114,7 @@
                     <hr style="border: 1px solid #79FF39">
                     <div class="row opiniones">
                         <div class="col-3 col-sm-4 col-lg-2 p-2">
-                            <img src="views/img/user01.jpg" class="img-thumbnail">	
+                            <img src="<?php echo $blog["domain"]?>views/img/user01.jpg" class="img-thumbnail">	
                         </div>
                         <div class="col-9 col-sm-8 col-lg-10 p-2 text-muted">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae, aut sint provident dolorem minus recusandae facere, ipsum magnam, nostrum enim. Error quasi quod ab consectetur explicabo consequuntur obcaecati suscipit!</p>
@@ -125,7 +125,7 @@
                             <span class="small float-right">Juanito Travel | 20.09.2018</span>
                         </div>
                         <div class="col-3 col-sm-4 col-lg-2 p-2">
-                            <img src="views/img/user02.jpg" class="img-thumbnail">	
+                            <img src="<?php echo $blog["domain"]?>views/img/user02.jpg" class="img-thumbnail">	
                         </div>
                     </div>
                     <hr style="border: 1px solid #79FF39">
@@ -140,14 +140,14 @@
                                 </div>
                             </div>
                             <div class="d-none d-md-block col-md-4 col-lg-3">
-                                <img src="views/img/subirFoto.png" class="img-fluid mt-md-3 mt-xl-2">
+                                <img src="<?php echo $blog["domain"]?>views/img/subirFoto.png" class="img-fluid mt-md-3 mt-xl-2">
                             </div>
                         </div>
                         <textarea class="form-control my-3" rows="7" placeholder="Escribe aquí tu mensaje"></textarea>
                         <input type="submit" class="btn btn-dark btn-lg btn-block" value="Enviar">
                     </form>
                     <!-- PUBLICIDAD -->
-                    <img src="views/img/ad01.jpg" class="img-fluid my-3 d-block d-md-none" width="100%">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad01.jpg" class="img-fluid my-3 d-block d-md-none" width="100%">
                 </div>
             </div>
             <!-- COLUMNA DERECHA -->
@@ -158,7 +158,7 @@
                     <div class="d-flex my-3">
                         <div class="w-100 w-xl-50 pr-3 pt-2">
                             <a href="articulos.html">
-                            <img src="views/img/articulo05.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                            <img src="<?php echo $blog["domain"]?>views/img/articulo05.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                             </a>
                         </div>
                         <div>
@@ -170,7 +170,7 @@
                     <div class="d-flex my-3">
                         <div class="w-100 w-xl-50 pr-3 pt-2">
                             <a href="articulos.html">
-                            <img src="views/img/articulo06.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                            <img src="<?php echo $blog["domain"]?>views/img/articulo06.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                             </a>
                         </div>
                         <div>
@@ -182,7 +182,7 @@
                     <div class="d-flex my-3">
                         <div class="w-100 w-xl-50 pr-3 pt-2">
                             <a href="articulos.html">
-                            <img src="views/img/articulo07.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                            <img src="<?php echo $blog["domain"]?>views/img/articulo07.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                             </a>
                         </div>
                         <div>
@@ -194,13 +194,13 @@
                 </div>
                 <!-- PUBLICIDAD -->
                 <div class="mb-4">
-                    <img src="views/img/ad03.png" class="img-fluid">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad03.png" class="img-fluid">
                 </div>
                 <div class="my-4">
-                    <img src="views/img/ad02.jpg" class="img-fluid">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad02.jpg" class="img-fluid">
                 </div>
                 <div class="my-4">
-                    <img src="views/img/ad06.png" class="img-fluid">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad06.png" class="img-fluid">
                 </div>
             </div>
         </div>

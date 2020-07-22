@@ -1,7 +1,7 @@
 <?php 
 
-if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
-    $actual_page =  $_GET["pages"];
+if (isset($routes[0]) && is_numeric($routes[0]))  {
+    $actual_page = $routes[0];
 } else {
     $actual_page = 1;
 }
@@ -21,7 +21,7 @@ if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
                             <a href="'.$value["route"].'">
                                 <h5 class="d-block d-lg-none py-3">'.$value["route"].'</h5>
                             </a>
-                            <a href="'.$value["route"].'"><img src="'.$value["portrait"].'" alt="'.$value["title"].'" class="img-fluid" width="100%"></a>
+                            <a href="'.$value["route"].'"><img src="'.$blog["domain"].''.$value["portrait"].'" alt="'.$value["title"].'" class="img-fluid" width="100%"></a>
                         </div>
                         <div class="col-12 col-lg-7 introArticulo">
                             <a href="'.$value["route"].'">
@@ -36,7 +36,7 @@ if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
                 }
                 ?>
                 <div class="container d-none d-md-block">
-                    <ul class="pagination justify-content-center" total_pages="<?php echo $total_pages; ?>" actual_page="<?php echo $actual_page; ?>"></ul>
+                    <ul class="pagination justify-content-center" total_pages="<?php echo $total_pages; ?>" actual_page="<?php echo $actual_page; ?>" route_page=""></ul>
                 </div>
             </div>
             <!-- COLUMNA DERECHA -->
@@ -50,7 +50,7 @@ if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
                     <div class="d-flex my-3">
                         <div class="w-100 w-xl-50 pr-3 pt-2">
                             <a href="articulos.html">
-                            <img src="views/img/articulo10.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                            <img src="<?php echo $blog["domain"]?>views/img/articulo10.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                             </a>
                         </div>
                         <div>
@@ -62,7 +62,7 @@ if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
                     <div class="d-flex my-3">
                         <div class="w-100 w-xl-50 pr-3 pt-2">
                             <a href="articulos.html">
-                            <img src="views/img/articulo09.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                            <img src="<?php echo $blog["domain"]?>views/img/articulo09.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                             </a>
                         </div>
                         <div>
@@ -74,7 +74,7 @@ if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
                     <div class="d-flex my-3">
                         <div class="w-100 w-xl-50 pr-3 pt-2">
                             <a href="articulos.html">
-                            <img src="views/img/articulo08.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
+                            <img src="<?php echo $blog["domain"]?>views/img/articulo08.png" alt="Lorem ipsum dolor sit amet" class="img-fluid">
                             </a>
                         </div>
                         <div>
@@ -86,13 +86,13 @@ if (isset($_GET["pages"]) && is_numeric($_GET["pages"]))  {
                 </div>
                 <!-- PUBLICIDAD -->
                 <div class="my-4">
-                    <img src="views/img/ad01.jpg" class="img-fluid">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad01.jpg" class="img-fluid">
                 </div>
                 <div class="my-4">
-                    <img src="views/img/ad02.jpg" class="img-fluid">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad02.jpg" class="img-fluid">
                 </div>
                 <div class="my-4">
-                    <img src="views/img/ad05.png" class="img-fluid">
+                    <img src="<?php echo $blog["domain"]?>views/img/ad05.png" class="img-fluid">
                 </div>
             </div>
         </div>
